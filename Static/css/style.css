@@ -537,13 +537,6 @@ fieldset.form-group {
 }
 
 @media (width < 435px) {
-  :root {
-    --spacing-500: 20px;
-    --spacing-400: 16px;
-    --spacing-300: 12px;
-    --spacing-200: 8px;
-  }
-
   .form-section > .title-section {
     flex-direction: column;
     align-items: flex-start;
@@ -556,6 +549,10 @@ fieldset.form-group {
     max-width: unset;
   }
 
+  fieldset.form-group {
+    margin-bottom: var(--spacing-300);
+  }
+
   .calculator-container {
     border-radius: 0px;
   }
@@ -564,10 +561,12 @@ fieldset.form-group {
   }
   .form-columns {
     flex-direction: column;
-    gap: 12px;
+    gap: 0px;
   }
   .illustration-section {
     padding: calc(10vw / 2);
+    padding-bottom: 24px;
+    padding-top: 24px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }

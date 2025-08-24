@@ -1,6 +1,4 @@
 document.querySelector('.calculate-btn').addEventListener('click', function (e) {
-  // e.preventDefault();
-  // form.reportValidity()
   const form = document.querySelector('form');
   let allValid = true;
   document.querySelectorAll('.input-wrapper').forEach(wrapper => {
